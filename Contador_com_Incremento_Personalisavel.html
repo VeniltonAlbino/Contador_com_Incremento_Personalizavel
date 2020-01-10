@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="_css/estilo.css"/>
+        <meta charset="UTF-8"/>
+        <title>Contador com Incremento Personalizável</title>
+        <style>
+            h3 {
+                margin-top: 0px;
+                text-align: center;
+                font-size: 25pt;
+            }
+            input#ini {
+                float: right;
+                margin-right: 120px;
+                font-size: 15pt;
+                margin-top: -2px;
+                width: 190px;
+            }
+            input#final {
+                float: right;
+                margin-right: 120px;
+                font-size: 15pt;
+                width: 190px;
+            }
+            select {
+                float: right;
+                margin-right: 122px;
+                font-size: 15pt;
+                width: 190px;
+            }
+            input#benv {
+                font-size: 20pt;
+                background-color: darkblue;
+                color: white;
+                margin-left: 280px;
+            }
+            span {
+                margin-left: 30px;
+                font-size: 20pt;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form method="get" action="Contador_com_Incremento_Personalizavel.php">
+                <h3>Contador com Incremento Personalizável</h3><br/>
+                <span>Valor Inicial:</span><input type="number" id="ini" name="inicio" min="0" max="99999"/><br/>
+                <span>Incremento:</span>
+                <select name="select">
+                    <option value="1">Um em Um</option>
+                    <option value="2">Dois em Dois</option>
+                    <option value="3">Três em Três</option>
+                    <option value="4">Quatro em Quatro</option>
+                    <option value="5">Cinco em Cinco</option>
+                    <option value="6">Seis em Seis</option>
+                    <option value="7">Sete em Sete</option>
+                    <option value="8">Oito em Oito</option>
+                    <option value="9">Nove em Nove</option>
+                    <option value="10">Dez em Dez</option>
+                </select><br>
+                <span>Valor Final:</span> <input type="number" id="final" name="fim" min="0" max="99999"><br/><br/>
+                <input type="submit" id="benv" value="Contar">
+            </form>
+        </div>
+    </body>
+</html>
